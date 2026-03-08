@@ -1,14 +1,9 @@
 Package: splitr
-Type: Package
 Title: Fast Utilities for Splitting Excel Sheets
 Version: 0.1.0
-Authors@R: 
-    person("Daniel", "Amah", email = "danielamahtoday@gmail.com", role = c("aut", "cre"))
+Authors@R: person("Daniel", "Amah", email = "danielamahtoday@gmail.com", role = c("aut", "cre"))
 Description: Provides a fast function for splitting large Excel sheets into
-    multiple smaller sheets using the openxlsx package. The function reads a
-    source Excel worksheet, partitions rows into n equal sized chunks, and
-    writes each chunk as a styled sheet inside a single workbook. Designed for
-    performance when handling large datasets.
+  multiple smaller sheets using the openxlsx package.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
