@@ -14,6 +14,13 @@
 #' @import data.table
 #' @import openxlsx
 #' @export
+#'
+#' @examples
+#' \dontrun{
+#' file <- system.file("extdata", "example.xlsx", package = "splitr")
+#' wb <- split_excel_to_sheets(file_path = file, n = 2)
+#' openxlsx::saveWorkbook(wb, "split_example.xlsx", overwrite = TRUE)
+#' }
 
 # -----------------------------------------------------------------------------
 # split_excel_to_sheets()
@@ -172,13 +179,6 @@ split_excel_to_sheets <- function(
 # -----------------------------------------------------------------------------
 # USAGE EXAMPLES
 # -----------------------------------------------------------------------------
-
-#' @examples
-#' \dontrun{
-#' # Using an example Excel file included in the package
-#' file <- system.file("extdata", "example.xlsx", package = "splitr")
-#' wb <- split_excel_to_sheets(file_path = file, n = 2)
-#' }
 
 
 # -- Basic: split into 5 sheets, save to disk ---------------------------------

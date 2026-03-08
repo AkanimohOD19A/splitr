@@ -35,3 +35,10 @@ An openxlsx workbook object
 \description{
 Reads a source Excel file and splits rows into multiple sheets.
 }
+\examples{
+\dontrun{
+file <- system.file("extdata", "example.xlsx", package = "splitr")
+wb <- split_excel_to_sheets(file_path = file, n = 2)
+openxlsx::saveWorkbook(wb, "split_example.xlsx", overwrite = TRUE)
+}
+}
